@@ -13,6 +13,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/rpc', {
+        templateUrl: 'views/rpc.html',
+        controller: 'RpcCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
