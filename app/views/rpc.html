@@ -1,1 +1,35 @@
+
 <p>This is the rpc view.</p>
+
+id: <input ng-model="id">
+method: 
+<select ng-model="method">
+  <option>getnewaddress</option>
+  <option>getinfo</option>
+  <option>getconnectioncount</option>
+  <option>getdifficulty</option>
+  <option>settxfee</option>
+  <option>getpeerinfo</option>
+  <option>other</option>
+</select>
+
+<p>
+<p>
+Params: 
+<p>
+<textarea ng-model="params" rows="5" cols="70">
+</textarea>
+<p>
+Request: 
+<pre>
+{{ request }}
+</pre>
+
+<button ng-click="submit()">post</button>
+<p>
+
+response:
+
+<pre>
+{{ response }}
+</pre>
