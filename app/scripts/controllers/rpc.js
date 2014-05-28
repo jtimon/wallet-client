@@ -10,9 +10,9 @@ angular.module('walletClientApp')
     $scope.submit = function() {
 
       $scope.request = {
-        "id": $scope.id,
-        "method": $scope.method,
-        "params": JSON.parse($scope.params)
+        'id': $scope.id,
+        'method': $scope.method,
+        'params': JSON.parse($scope.params)
       };
 
       $http.post('http://127.0.0.1:5000/bitcoind', $scope.request)
