@@ -1,0 +1,5 @@
+web: grunt serve
+# api: gunicorn wallet:app -b $ADR -w 3 -k gevent
+api: python wallet/__init__.py
+bitcoind: ../bitcoin/src/bitcoind -server -regtest
+

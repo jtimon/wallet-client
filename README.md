@@ -3,7 +3,7 @@ wallet-client
 
 Angular GUI for a bitcoin wallet
 
-Run python server
-================
+Run
+===
 
-python ./server/api.py
+make run
